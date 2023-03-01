@@ -13,6 +13,8 @@
 .Header{
   display: flex;
   align-items: center;
+  background-color: rgb(255, 255, 255);
+  margin-top: 0;
 }
 .Home{
   color: #143d59;
@@ -211,10 +213,92 @@ border-radius: 5px;
   margin-right: 50px; 
 
 }
+.More-About{
+  border: none;
+  background-color: rgb(51, 124, 153);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 30px;
+  border-radius: 8px;
+}
+.More-About:hover{
+  box-shadow: #1f1209;
+  cursor: pointer;
+}
 .interior-drawing{
   width: 400px;
 }
 .photo-3{
   width: 700px;
   border-radius: 5px;
+}
+body{
+  background-color: rgb(255, 255, 255);
+}
+.offer-title{
+  display: block;
+  color: darkcyan;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 560;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.offer-1{
+  color: darkcyan;
+  margin-right: 50px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.offer-2{
+  color: darkcyan;
+  margin-right: 50px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.offer-3{
+  color: darkcyan;
+  margin-right: 50px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.offer-4{
+  color: darkcyan;
+  margin-right: 50px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+:root {
+  --borderWidth: 7px;
+  --height: 24px;
+  --width: 12px;
+  --borderColor: #78b13f;
+}
+
+body {
+  padding: 20px;
+  text-align: center;
+}
+
+.check {
+  display: inline-block;
+  transform: rotate(45deg);
+  height: var(--height);
+  width: var(--width);
+  border-bottom: var(--borderWidth) solid var(--borderColor);
+  border-right: var(--borderWidth) solid var(--borderColor);
+}
+.checkmark{
+  width: 30px;
+}
+.offer-block{
+  display: grid;
+  grid-template-columns: 25px 500px 30px 500px;
+  align-items: center;
+  justify-content: center;
 }
