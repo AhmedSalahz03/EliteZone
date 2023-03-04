@@ -84,6 +84,7 @@
 	border-bottom: 1px solid #1f1209;
 	box-shadow: 0 20px 20px -20px #333;
   margin: -50px auto 10px; 
+  margin-bottom: 35px;
 }
 .block-1{
   display: flex;
@@ -91,11 +92,12 @@
   margin-top: 40px;
   margin-bottom: 100px;
   background-color: antiquewhite;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+
 }
 .text-1{
   color: darkcyan;
@@ -161,11 +163,11 @@ border-radius: 5px;
   margin-bottom: 100px;
   background-color: antiquewhite;
 
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
 }
 .text-2{
   color: darkcyan;
@@ -224,16 +226,18 @@ border-radius: 5px;
 .More-About:hover{
   box-shadow: #1f1209;
   cursor: pointer;
+  background-color: rgb(119, 168, 181);
 }
 .interior-drawing{
-  width: 400px;
+  width: 300px;
+  margin-left: 20px;
 }
 .photo-3{
   width: 700px;
   border-radius: 5px;
 }
 body{
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(20, 2, 2, 0.562);
 }
 .offer-title{
   display: block;
@@ -283,6 +287,7 @@ body{
 body {
   padding: 20px;
   text-align: center;
+  background-color: #fff;
 }
 
 .check {
@@ -301,4 +306,75 @@ body {
   grid-template-columns: 25px 500px 30px 500px;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  
 }
+.Contact{
+  background-color: rgb(2, 108, 108);
+}
+.Contact-us{
+  color: rgb(255, 153, 0);
+  font-size: 40px;
+  font-family:'Montserrat', sans-serif;
+  justify-self: left;
+  display: flex;
+}
+
+
+.slowFade {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  
+}
+.slowFade .slide img {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: #000;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  opacity: 0;
+  transform: scale(1.1) rotate(0deg);
+  -webkit-animation: slowFade 16s infinite;
+          animation: slowFade 16s infinite;
+}
+.slowFade .slide:nth-child(3) img {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.slowFade .slide:nth-child(2) img {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+.slowFade .slide:nth-child(1) img {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+@keyframes slowFade {
+  25% {
+      opacity: 1;
+      transform: scale(1) rotate(0);
+  }
+  40% {
+      opacity: 0;
+  }
+}
+@-webkit-keyframes slowFade {
+  25% {
+      opacity: 1;
+      transform: scale(1) rotate(0);
+  }
+  40% {
+      opacity: 0;
+  }
+}
+
+
+
